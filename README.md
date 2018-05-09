@@ -1,5 +1,5 @@
 ## FIRST Classifier: Compact and Extended Radio Galaxies Classification using Deep Convolutional Neural Networks
-- #### Wathela Alhassan et al.
+- ### Wathela Alhassan et al.
 ### Paper
 `Coming soon` ...
 
