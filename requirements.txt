@@ -1,0 +1,11 @@
+scipy
+numpy
+matplotlib
+pandas
+skimage
+urllib
+pyvo 
+astropy
+PIL
+requests
+keras
