@@ -16,12 +16,12 @@ Predicted morphology type(corresponding to the highest probability), probabiliti
 How to run exmple:
 python3 single_source_classification.py -Ra  124.39358 -Dec 44.98078
 
-### [Multi Sources classification](multi_source_classification.py):
+### [Multi Sources classification](multi_sources_classification.py):
 Allow the classification of a list of sources (csv file).
 #### Input: 
 A csv file that has a list of coordinates of sources and index of the Right Ascention and Declination columns ( RA and DEC must be in degree).
 #### Output: 
-A csv file containing 4 columns: Coordinates (RA and DEC), Predicted class, High- est probability, Link to download the cut-out FITS file.
+A csv file containing 4 columns: Coordinates (RA and DEC), Predicted class, Highest probability, Link to download the cut-out FITS file.
 
 How to run exmple:
 python3 multi_source_classification.py
