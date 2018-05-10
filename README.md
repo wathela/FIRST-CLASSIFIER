@@ -4,7 +4,7 @@
 `Coming soon ...` 
 
 ### [FIRST Classifier](FIRST_CLASSIFIER.py)
-We present the FIRST Classifier, an on-line system for automated classification of Compact and Extended radio sources. We developed the FIRST Clas- sifier based on a trained Deep Convolutional Neural Network Model to automate the morphological classification of compact and extended radio sources observed in the FIRST radio survey. Our model achieved an overall accuracy of 97% and a recall of 98%, 100%, 98% and 93% for Compact, BENT, FRI and FRII galaxies respectively. The current version of the FIRST classifier is able to predict the morphological class for a single source or for a list of sources as Compact or Extended (FRI, FRII and BENT).
+We present the FIRST Classifier, an on-line system for automated classification of Compact and Extended radio sources. We developed the FIRST Classifier based on a trained Deep Convolutional Neural Network Model to automate the morphological classification of compact and extended radio sources observed in the FIRST radio survey. Our model achieved an overall accuracy of 97% and a recall of 98%, 100%, 98% and 93% for Compact, BENT, FRI and FRII galaxies respectively. The current version of the FIRST classifier is able to predict the morphological class for a single source or for a list of sources as Compact or Extended (FRI, FRII and BENT).
 
 ### [Single Source classification](single_source_classification.py):
 Classify only one single source.
@@ -27,4 +27,4 @@ How to run example:
 
 `python3 multi_source_classification.py --data_dir wathela/test.csv --ra_col 0 --dec_col 1`
 
-#### Make sure all the [Requirement Packages](requirements.txt) are installed.
+#### Before you run make sure all the [Required Packages](requirements.txt) are installed.
