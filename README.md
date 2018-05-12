@@ -25,7 +25,7 @@ Allow the classification of a list of sources (csv file).
 
 - How to run example:
 
-  `python3 multi_source_classification.py --data_dir wathela/test.csv --ra_col 0 --dec_col 1`
+  `python3 multi_sources_classification.py --data_dir wathela/test.csv --ra_col 0 --dec_col 1`
 ### Requirement:
 - #### Python 3.x with the [Required Packages](requirements.txt) installed.
 
