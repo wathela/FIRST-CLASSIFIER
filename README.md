@@ -14,8 +14,8 @@ Classify only one single source.
   Predicted morphology type(corresponding to the highest probability), probabilities plot of the classification and a direct link to download the FITS file cut out of the target.
 
 - How to run example:
-  `python3 single_source_classification.py -Ra  124.39358 -Dec 44.98078`
-
+  `python3 single_source_classification.py`
+  then you will be asked to inter the Ra and Dec of the source.
 ### [Multi Sources classification](multi_sources_classification.py):
 Allow the classification of a list of sources (csv file).
 - #### Input: 
