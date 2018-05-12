@@ -1,6 +1,13 @@
+#!/usr/bin/python
+"""
+    FIRST Classifier
+    By: Wathela Alhassan
+    Uinversity of Cape Town, Department of Astronomy.
+    01/April/2018
+    """
 
-import sys
-sys.path.append('/Users/wathelaalhassan/anaconda3/lib/python3.6/site-packages')
+#import sys
+#sys.path.append('/Users/wathelaalhassan/anaconda3/lib/python3.6/site-packages')
 
 from scipy.misc import imread, imsave
 import numpy as np
@@ -30,18 +37,8 @@ os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
 global img_size
 img_size=150
 
-#!/usr/bin/python
-"""
-    FIRST Classifier
-    By: Wathela Alhassan
-    Uinversity of Cape Town, Department of Astronomy.
-    01/April/2018
-    """
-
-
-
 global model_load
-model_load = load_model("300sof_4class_model_grey.hdf5")
+model_load = load_model("model.hdf5")
 
 
 
@@ -61,9 +58,10 @@ def FIRST_classifier(RA,DEC):
                 img = resp.content
                 f.write(img)
             
-            data = fits2jpg('fit.fits')
+            data = clean_crop_FITS('fit.fits')
             CLASS = classification(data)
             prob = max(Prob(data)[0])
+            f.close()
         else:
             dataurl, CLASS, prob='nan','nan','nan'
             print("No data found at "+ str(ra)+' , '+str(dec))
@@ -78,30 +76,27 @@ def FIRST_classifier(RA,DEC):
 #        continue
     return dataurl,CLASS,prob,data
 
-# Clipper function
+# Clipper function (Anyan el at.)
 def clip(data,lim):
     data[data<lim] = 0.0
     return data
 
 
-def fits2jpg(fname):
+def clean_crop_FITS(fname):
     hdu_list = fits.getdata(fname)
     image = np.squeeze(hdu_list)
-    img = np.copy(image)
-    idx = np.isnan(img)
-    img[idx] = 0
+    nan = np.isnan(image)
+    image[nan] = 0
     sigma = 3.0
     
-    # Estimate stats
-    mean, median, std = sigma_clipped_stats(img, sigma=sigma, iters=10)
+    mean, median, std = sigma_clipped_stats(image, sigma=sigma, iters=10)
     # Clip off n sigma points
-    img_clip = clip(img,std*sigma)
+    img_clip = clip(image,std*sigma)
     img_clip = img_clip[ 75:225, 75:225]
     
-    #     img = (((img_clip - img_clip.min()) / (img_clip.max() - img_clip.min())) * 255.9)#.astype(np.uint8)
     minval, maxval = img_clip.min(),img_clip.max()
     norm = img_clip - minval
-    img = norm*(1./(maxval-minval))#.astype(np.uint8)
+    img = norm*(1./(maxval-minval))
     
     return img
 
