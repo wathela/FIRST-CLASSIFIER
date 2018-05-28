@@ -6,7 +6,7 @@
 ### [FIRST Classifier](FIRST_CLASSIFIER.py)
 We present the FIRST Classifier, an on-line system for automated classification of Compact and Extended radio sources. We developed the FIRST Classifier based on a trained Deep Convolutional Neural Network Model to automate the morphological classification of compact and extended radio sources observed in the FIRST radio survey. Our model achieved an overall accuracy of 97% and a recall of 98%, 100%, 98% and 93% for Compact, BENT, FRI and FRII galaxies respectively. The current version of the FIRST classifier is able to predict the morphological class for a single source or for a list of sources as Compact or Extended (FRI, FRII and BENT).
 
-<img src="https://www.dropbox.com/s/iwbobvsh7vrbqkc/Diagram.png?dl=0" width=493px>
+<img src="https://github.com/wathela/FIRST-CLASSIFIER/blob/master/Diagram.png" width=493px>
 
 ### [Single Source classification](single_source_classification.py):
 Classify only one single source.
