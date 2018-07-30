@@ -1,7 +1,11 @@
 ## FIRST Classifier: Compact and Extended Radio Galaxies Classification using Deep Convolutional Neural Networks
 - ### Wathela Alhassan et al.
 ### Paper
-`Coming soon ...` 
+MNRAS: https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/sty2038/5060783
+
+
+Astr-ph: https://arxiv.org/abs/1807.10380
+
 
 ### [FIRST Classifier](FIRST_CLASSIFIER.py)
 We present the FIRST Classifier, an on-line system for automated classification of Compact and Extended radio sources. We developed the FIRST Classifier based on a trained Deep Convolutional Neural Network Model to automate the morphological classification of compact and extended radio sources observed in the FIRST radio survey. Our model achieved an overall accuracy of 97% and a recall of 98%, 100%, 98% and 93% for Compact, BENT, FRI and FRII galaxies respectively. The current version of the FIRST classifier is able to predict the morphological class for a single source or for a list of sources as Compact or Extended (FRI, FRII and BENT).
@@ -32,4 +36,22 @@ Allow the classification of a list of sources (csv file).
 - #### Python 3.x with the [Required Packages](requirements.txt) installed.
 
 ### How to cite:
-    Coming soon ...
+@article{Alhassan2018,
+
+author = {Alhassan, Wathela and Taylor, A R and Vaccari, Mattia},
+
+doi = {10.1093/mnras/sty2038},
+
+issn = {0035-8711},
+
+journal = {Monthly Notices of the Royal Astronomical Society},
+
+month = {jul},
+
+title = {{The FIRST Classifier: Compact and Extended Radio Galaxy Classification using Deep Convolutional Neural Networks}},
+
+url = {https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/sty2038/5060783},
+
+year = {2018}
+
+}
