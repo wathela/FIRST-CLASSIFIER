@@ -4,7 +4,7 @@
 MNRAS: https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/sty2038/5060783
 
 
-Astr-ph: https://arxiv.org/abs/1807.10380
+Astro-ph: https://arxiv.org/abs/1807.10380
 
 
 ### [FIRST Classifier](FIRST_CLASSIFIER.py)
