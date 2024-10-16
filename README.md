@@ -1,3 +1,9 @@
+[![Language](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/wathela/pymerger/blob/main/LICENSE)
+[![DOI](https://zenodo.org/badge/825790581.svg)]()
+
+
+
 ## FIRST Classifier: Compact and Extended Radio Galaxies Classification using Deep Convolutional Neural Networks
 - ### Wathela Alhassan et al. 2018
 ### Paper
