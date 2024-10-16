@@ -21,7 +21,7 @@ Classifies a single radio source.
 
 - How to run example:
   ```bash
-  `python FIRSTClassifier.py --ra 223.47337 --dec 26.80928` 
+  python FIRSTClassifier.py --ra 223.47337 --dec 26.80928
   
 ### [Multi Source classification](FIRSTClassifier.py):
 Allow the classification of a list of sources (csv file).
@@ -31,8 +31,8 @@ Allow the classification of a list of sources (csv file).
   A CSV file with four columns: Coordinates (RA and DEC), Predicted Class, Associated Probability, and a Link to download the FITS file cut-out.
 
 - How to run example:
-
-  `python FIRSTClassifier.py --data_file path/to/file/test.csv --out_dir results.csv --ra_col 0 --dec_col 1`
+ ```bash
+  python FIRSTClassifier.py --data_file path/to/file/test.csv --out_dir results.csv --ra_col 0 --dec_col 1
 ### Requirement:
 - #### Python 3.x with the [Required Packages](requirements.txt) installed.
 
