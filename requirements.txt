@@ -1,11 +1,9 @@
-scipy
-numpy
-matplotlib
-pandas
-skimage
-urllib
-pyvo 
-astropy
-PIL
-requests
-keras
+ pandas==2.0.3
+ numpy==1.24.3
+ matplotlib==3.7.5
+ scipy==1.10.1
+ astropy==5.2.2
+ pyvo==1.5.2
+ scikit-image==0.21.0
+ keras==2.13.1
+ tensorflow==2.13.1
